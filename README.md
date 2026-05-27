@@ -1,14 +1,5 @@
-title: FoodExtract-Vision Fine-tuned VLM Structued Data Extractor
-emoji: 🍟➡️📝
-colorFrom: green
-colorTo: blue
-sdk: gradio
-app_file: app.py
-pinned: false
-license: apache-2.0
----
-
-Fine-tuned SmolVLM2-500M to extract food and drink items from images. This is a follow-along from [LearnHuggingface](https://www.learnhuggingface.com/notebooks/hugging_face_vlm_fine_tune_tutorial) and [YT Video](https://www.youtube.com/watch?v=_EMfJSmLSKE)
+Fine-tuned SmolVLM2-500M to extract food and drink items from images.
+This is a follow-along from [LearnHuggingface](https://www.learnhuggingface.com/notebooks/hugging_face_vlm_fine_tune_tutorial) and [YT Video](https://www.youtube.com/watch?v=_EMfJSmLSKE)
 For additional info :
 [Github Repo](github.com/mrdbourke/learn-huggingface)
 
@@ -26,7 +17,6 @@ However, the fine-tuned model could definitely be improved with respects to its 
 
 Both models use the input prompt:
 
-````
 Classify the given input image into food or not and if edible food or drink items are present, extract those to a list. If no food/drink items are visible, return empty lists.
 
 Only return valid JSON in the following form:
@@ -39,7 +29,6 @@ Only return valid JSON in the following form:
   'drink_items': [] # list[str] - list of visible edible drink item nouns
 }
 ```
-````
 
 Except one model has been fine-tuned on the structured data whereas the other hasn't.
 
